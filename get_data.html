@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Get data from JS file</title>
+    <script src="module1.js"></script>
+</head>
+
+<body>
+    <select name="pokemon" id="pokemon" onchange="getData(this)">
+        <option>-</option>
+        <option value="Pikachu">Pikachu</option>
+        <option value="Bulbasaur">Bulbasaur</option>
+    </select>
+
+    <div>
+        <label for="type">Type:</label>
+        <input type="text" id="type" name="type"><br>
+        <label for="evol-method">Evolution Method:</label>
+        <input type="text" id="evol-method" name="evol-method"><br>
+    </div>
+
+    <script src="get_data.js"></script>
+</body>
+
+</html>
+
+<!-- resources used  -->
+<!-- https://www.tabnine.com/academy/javascript/how-to-use-option-selected-property/ -->
