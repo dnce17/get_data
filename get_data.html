@@ -3,21 +3,20 @@
 
 <head>
     <title>Get data from JS file</title>
-    <script src="module1.js"></script>
+    <script src="module1.js"></script> <!--must be in head tag for js file to access objects in other js file-->
 </head>
 
 <body>
     <select name="pokemon" id="pokemon" onchange="getData(this)">
-        <option>-</option>
         <option value="Pikachu">Pikachu</option>
         <option value="Bulbasaur">Bulbasaur</option>
     </select>
 
     <div>
         <label for="type">Type:</label>
-        <input type="text" id="type" name="type"><br>
+        <input type="text" id="type" name="type" value ="Electric"><br>
         <label for="evol-method">Evolution Method:</label>
-        <input type="text" id="evol-method" name="evol-method"><br>
+        <input type="text" id="evol-method" name="evol-method" value ="Thunderstone"><br>
     </div>
 
     <script src="get_data.js"></script>
@@ -27,3 +26,4 @@
 
 <!-- resources used  -->
 <!-- https://www.tabnine.com/academy/javascript/how-to-use-option-selected-property/ -->
+<!-- https://stackoverflow.com/questions/6429959/objects-inside-objects-in-javascript -->

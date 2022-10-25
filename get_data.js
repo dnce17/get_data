@@ -3,8 +3,6 @@ let evolMethod = document.querySelector("#evol-method");
 
 function getData(item) {
     // console.log(item.value); // returns e.g. STRING (emphasis on this) "pikachu"
-    // type.value = item.type;
-    // evolMethod.value = item.howToEvolve;
 
     for (key in pokemon) {
         // console.log(pokemon[key].name); 
@@ -12,8 +10,8 @@ function getData(item) {
             console.log("Yes, it is the same.");
             type.value = pokemon[key].type;
             evolMethod.value = pokemon[key].howToEvolve;
-            // console.log(pokemon[key].type);
-            // console.log(pokemon[key].howToEvolve);
+        } else {
+            
         }
     }
 }
